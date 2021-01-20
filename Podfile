@@ -7,6 +7,17 @@ target 'Beer' do
 
   # Pods for Beer
 	pod 'Alamofire', '~> 5.2'
+   pod 'RxSwift', '5.0.0'
+    pod 'RxCocoa', '5.0.0'
+    pod 'Then', '2.7.0'
+pod "Unbox"
 
 
 end
+
+target 'BeerTests' do
+        platform :ios, '12.0'
+        pod 'RxTest', '5.1.1'
+        pod 'RxBlocking', '5.1.1'
+
+    end

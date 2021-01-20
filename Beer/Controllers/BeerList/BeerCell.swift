@@ -26,13 +26,12 @@ class BeerCell: UITableViewCell {
 
     }
  
-    
-    var update: BeerListViewModel!{
-        didSet{
-            ivImage_url.loadImage(update.image_url)
-            lbTitle.text = update.name
-            lbIbv.text = "\(update.alcohol)% vol."
-        }
+    func update(_ beer: BeerModel){
+
+        ivImage_url.loadImage(beer.image_url)
+        lbTitle.text = beer.name
+        lbIbv.text = "\(beer.alcohol)% vol."
+
     }
 
 }
