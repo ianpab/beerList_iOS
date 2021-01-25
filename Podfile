@@ -13,11 +13,12 @@ target 'Beer' do
 pod "Unbox"
 
 
-end
 
 target 'BeerTests' do
-        platform :ios, '12.0'
+        inherit! :search_paths
         pod 'RxTest', '5.1.1'
         pod 'RxBlocking', '5.1.1'
 
     end
+
+end

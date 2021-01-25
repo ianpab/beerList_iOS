@@ -22,8 +22,8 @@
 		0BD860C025B64C2A00802041 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD860BE25B64C2A00802041 /* LaunchScreen.storyboard */; };
 		0BD860CC25B64E4B00802041 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD860CB25B64E4B00802041 /* Navigator.swift */; };
 		0BD860D225B650AC00802041 /* ListBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD860D125B650AC00802041 /* ListBeerViewController.swift */; };
+		1FD12E31639D30B44C9D0073 /* Pods_BeerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E333FBEBDA696217B22EC07F /* Pods_BeerTests.framework */; };
 		3D0F1B63E521EF1E4CFEF0BE /* Pods_Beer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852687A97C8D7A464061EF91 /* Pods_Beer.framework */; };
-		5B3F56975334E80987F0F0E2 /* libPods-BeerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 117795545D2B73AAC16105E0 /* libPods-BeerTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,12 +56,12 @@
 		0BD860C125B64C2A00802041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BD860CB25B64E4B00802041 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		0BD860D125B650AC00802041 /* ListBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBeerViewController.swift; sourceTree = "<group>"; };
-		117795545D2B73AAC16105E0 /* libPods-BeerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1546BE1CC97164EAB5BA20FB /* Pods-Beer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beer.debug.xcconfig"; path = "Target Support Files/Pods-Beer/Pods-Beer.debug.xcconfig"; sourceTree = "<group>"; };
 		61E392B9DBFDC421E7D3CFEE /* Pods-BeerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerTests.debug.xcconfig"; path = "Target Support Files/Pods-BeerTests/Pods-BeerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6CA79C42E3829047F12F255F /* Pods-Beer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beer.release.xcconfig"; path = "Target Support Files/Pods-Beer/Pods-Beer.release.xcconfig"; sourceTree = "<group>"; };
 		852687A97C8D7A464061EF91 /* Pods_Beer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA155DA024F1AEA577D56963 /* Pods-BeerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerTests.release.xcconfig"; path = "Target Support Files/Pods-BeerTests/Pods-BeerTests.release.xcconfig"; sourceTree = "<group>"; };
+		E333FBEBDA696217B22EC07F /* Pods_BeerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B3F56975334E80987F0F0E2 /* libPods-BeerTests.a in Frameworks */,
+				1FD12E31639D30B44C9D0073 /* Pods_BeerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				852687A97C8D7A464061EF91 /* Pods_Beer.framework */,
-				117795545D2B73AAC16105E0 /* libPods-BeerTests.a */,
+				E333FBEBDA696217B22EC07F /* Pods_BeerTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -238,6 +238,7 @@
 				0BBF529825B8A64A00976AE6 /* Sources */,
 				0BBF529925B8A64A00976AE6 /* Frameworks */,
 				0BBF529A25B8A64A00976AE6 /* Resources */,
+				B38DD3AC3AA460EE89F6771A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -363,6 +364,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B38DD3AC3AA460EE89F6771A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeerTests/Pods-BeerTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeerTests/Pods-BeerTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeerTests/Pods-BeerTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E786B052405253802CA0F7DD /* [CP] Check Pods Manifest.lock */ = {

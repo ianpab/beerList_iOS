@@ -41,7 +41,6 @@ class DetailBeerViewController: UIViewController {
     func setupView(){
         lbTitle.text = viewModel.beerInfo.name
         ivBackground.image = UIImage(named: "beer")
-        ivBackground.layer.cornerRadius = 35
         lbTagline.text = viewModel.beerInfo.tagline
         lbAbv.text = "\(viewModel.beerInfo.alcohol)% vol."
         lbIbu.text = "\(viewModel.beerInfo.attenuation) Ibu"
