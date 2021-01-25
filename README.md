@@ -5,7 +5,8 @@
 
 Um aplicativo para consultar bebidas e informações sobre eles.<br><br>
 Ao selecionar uma bebida da lista, é apresentado as informações obtidas da API da PunkApi.
- <br>
+ <br><br>
+ <b>Nota:</b> O valor <i>ibu</i> foi substituido por <i>attenuation_level</i>, por problemas na API.
 
 <a id="tecnologias-utilizadas"></a>
 
@@ -23,7 +24,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ## :rocket: Projeto
 
-<img src="https://user-images.githubusercontent.com/19232691/105228242-1c41ac80-5b41-11eb-8219-c0eece80d5b8.gif">
+<img src="https://user-images.githubusercontent.com/19232691/105773809-49c49680-5f43-11eb-8d3e-e9e45d34237f.gif">
 
 
 ## 📍 Getting Started
